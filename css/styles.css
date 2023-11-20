@@ -186,21 +186,35 @@ ul {
 }
 
 /* Traditions section */
-.tradions-section {
+.traditions-section {
   padding-top: 96px;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
 }
 
 .traditions-title {
   margin-bottom: 42px;
 }
 
-.tradions-text .brand {
+.traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
 }
 
-.tradions-text .uppercase {
+.traditions-text .uppercase {
   text-transform: uppercase;
+}
+
+.traditions-text.limited {
+  max-width: 340px;
 }
 
 /* Chefs section */
@@ -215,6 +229,22 @@ ul {
 }
 
 /* Formats section */
+.formats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+  padding: 24px;
+  border: 1px solid lightgray; /*remove*/
+  border-radius: 16px;
+}
+
 .formats-title {
   margin-bottom: 80px;
 }
